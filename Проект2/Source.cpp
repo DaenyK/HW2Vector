@@ -42,16 +42,16 @@ void main()
 			cout << "\n\n4.изменение значения в указанной позиции\n";
 			cout << "\nвведите позицию: "; cin >> pos;
 			cout << "введите любое число: "; cin >> num;
-			v1.at(pos) = num;
+			v1.change(pos, num);
 			v1.print();
 		}
 		case 5: {
-			cout << "\n\n5.возврат значения из указанной позиции\n";
-			cout << "\nвведите позицию: "; cin >> pos;
-			cout << "введите любое число: "; cin >> num;
-			v1.returnInPos(pos,num);
+			cout << "\n\n5.возврат значения из указанной позиции\n\n";
 			v1.print();
-		}
+			cout << "\nвведите позицию: "; cin >> pos;
+			int b = v1.at(pos);
+			cout << endl << b << " - возращенное значение\n";
+		}break;
 		}
 
 		cout << "\n\nхотите продолжить?1/0 ";

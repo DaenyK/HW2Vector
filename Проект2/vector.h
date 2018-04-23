@@ -97,7 +97,7 @@ public:
 			els[i] = els[i + 1];
 		cur_size--;
 	}
-	void returnInPos(const int&p, const int&e)
+	void change(const int&p, const int&e)
 	{
 		els[p - 1] = e;
 	}
